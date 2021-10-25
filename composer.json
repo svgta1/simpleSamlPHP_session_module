@@ -8,6 +8,6 @@
     "require": {
         "php" : ">=7.3",
         "simplesamlphp/composer-module-installer": "^1.1",
-        "simplesamlphp/simplesamlphp": "~1.19",
+        "simplesamlphp/simplesamlphp": "~1.19"
     }
 }
