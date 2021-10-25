@@ -1,0 +1,13 @@
+
+{
+    "name": "svgtaUtils/simplesamlphpSession",
+    "description": "Module contrôle a session by a backoffice server",
+    "type": "simplesamlphp-module",
+    "keywords" : ["simplesamlphp", "session"],
+    "license" : "LGPL-2.1-only",
+    "require": {
+        "php" : ">=7.3",
+        "simplesamlphp/composer-module-installer": "^1.1",
+        "simplesamlphp/simplesamlphp": "~1.19",
+    }
+}
