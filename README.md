@@ -25,7 +25,7 @@ You can download this module directely and install it in the module directory of
 Other solution with composer : 
 
 ```shell
-composer require svgtaUtils/simplesamlphpSession
+composer require svgta/simplesamlphp-session
 ```
 
 Check the config-template directory of the module and copy the config file in your config directory of SimpleSAMLphp.
