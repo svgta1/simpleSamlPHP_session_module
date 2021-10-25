@@ -86,13 +86,13 @@ The verifications must been done on the SimpleSAMLphp instance where the token h
 To very if the session is avalable : 
 
 ```shell
-https://yourSimpleSAMLphp_fqdn/authent/module.php/svgtaSession/isAuth
+https://yourSimpleSAMLphp_fqdn/authent/module.php/svgtasession/isAuth
 ```
 
 To verify and receive the attributes 
 
 ```
-https://yourSimpleSAMLphp_fqdn/authent/module.php/svgtaSession/getData.php
+https://yourSimpleSAMLphp_fqdn/authent/module.php/svgtasession/getData.php
 ```
 
 They give back a json and a response status : 200 if the all is ok. 401 and 403 can been tested by the backoffice server two. Other codes are error.
@@ -151,7 +151,7 @@ curl -H 'Accept:application/json' \
 	-H 'X-Auth-Token: He3NcVl0cK0WZAO4SUgOC8UZPgvtuhQs' \
 	-d '{"token":"8b45ddabc9d0e2f4452371516829234a285fce7dde161e26173fbd53b5a7c8c9267d508ead8d3ac31280e585149b0fa8dbebe244a3f79d6cec1ae0ed11175424a01a9b97ef86ab81c5e85ca530d5217dad52267c99bb665b2da41cda3ccfee58784b0e86dab6b26a8ae25efbf166d52a90fcc46241d8aa8469c06ba42469ba01"}' \
 	-H "Content-Type: application/json" \
-	-X POST 'https://yourSimpleSAMLphp_fqdn/authent/module.php/svgtaSession/getData.php'
+	-X POST 'https://yourSimpleSAMLphp_fqdn/authent/module.php/svgtasession/getData.php'
 ```
 
 
