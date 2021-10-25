@@ -16,7 +16,7 @@ class ctrl{
 		return self::$sessionId;
 	}
 	public function ctrlAuth(){
-		if(!\SimpleSAML\Module\svgtaSession\security::verifyAuth()){
+		if(!security::verifyAuth()){
 			header("HTTP/1.1 403 Forbidden");
 			throw new \Exception('Accès interdit');
 		}	
@@ -33,19 +33,19 @@ class ctrl{
 	public function isAuthSesSource($ar){
 		self::$source = $ar['source'];
 		self::$sessionId = $ar['sessionId'];
-		$ret = \SimpleSAML\Module\svgtaSession\ses::isAuthenticated($ar['sessionId'], $ar['source'], false);
+		$ret = ses::isAuthenticated($ar['sessionId'], $ar['source'], false);
 		if(!$ret)
 			header("HTTP/1.1 401 Unauthorized");
 		return $ret;
 	}
 	public function isAuthToken($token){
-		$json = \SimpleSAML\Module\svgtaSession\ses::getToken($token);
+		$json = ses::getToken($token);
 		$sessionId = $json['sesId'];
 		$sourceAr = $json['auth'];
 		$isAuth = false;
 		if($sourceAr)
 		foreach($sourceAr as $source){
-			$isAuth = \SimpleSAML\Module\svgtaSession\ses::isAuthenticated($sessionId, $source, true);
+			$isAuth = ses::isAuthenticated($sessionId, $source, true);
 			if($isAuth)
 				break;
 		}
