@@ -1,6 +1,6 @@
 
 {
-    "name": "svgtaUtils/simplesamlphpSession",
+    "name": "svgta/simplesamlphp-session",
     "description": "Module contrôle a session by a backoffice server",
     "type": "simplesamlphp-module",
     "keywords" : ["simplesamlphp", "session"],
