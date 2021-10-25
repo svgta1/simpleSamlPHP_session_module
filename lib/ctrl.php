@@ -1,5 +1,5 @@
 <?php
-namespace SimpleSAML\Module\svgtaSession;
+namespace SimpleSAML\Module\svgtasession;
 
 class ctrl{
 	private static $useToken = null;

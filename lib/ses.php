@@ -1,6 +1,6 @@
 <?php
 
-namespace SimpleSAML\Module\svgtaSession;
+namespace SimpleSAML\Module\svgtasession;
 use SimpleSAML\Session;
 
 class ses{

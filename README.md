@@ -55,7 +55,7 @@ Finally, add the authoproc to the SP (in file **metada/saml20-sp-remote**)
 	10 => array(
 		'class' => 'core:PHP',
 		'code' => '
-			$attributes["token"] = [\SimpleSAML\Module\svgtaSession\ses::setToken()];
+			$attributes["token"] = [\SimpleSAML\Module\svgtasession\ses::setToken()];
 		',
 	),	
 ),
@@ -66,7 +66,7 @@ This will add the attribute **token** for the SP.
 If you are on your SP application, you can generate the token by calling
 
 ```php
-$token = \SimpleSAML\Module\svgtaSession\ses::setToken();
+$token = \SimpleSAML\Module\svgtasession\ses::setToken();
 ```
 
 
